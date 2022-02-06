@@ -1,4 +1,4 @@
-# Sticky-Notes
+# 使用 electron + vue3 开发的桌面便签应用
 
 一个使用 electron + vite2 + vue3 + TS + electron-builder 开发的便签应用
 
