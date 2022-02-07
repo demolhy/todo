@@ -22,12 +22,12 @@ export enum MenuCallbackType {
 export const getTodoItemMenu = (click: MenuFunctionType, todo: TodoModel) => {
     let status: StatusModel = todo.status;
     let todoItemMenu: Array<Electron.MenuItem> = [
-        status != StatusModel.已完成 ? {
+        status != StatusModel.已完成 && !todo.lastComplateDate ? {
             label: "编辑",
             click: () => click(MenuCallbackType.编辑, todo),
             icon: getImg('static/image/menu/edit.png')
         } : null,
-        status != StatusModel.已完成 ? {
+        status != StatusModel.已完成 && !todo.lastComplateDate ? {
             label: "完成",
             click: () => click(MenuCallbackType.完成, todo),
         } : {
@@ -35,12 +35,12 @@ export const getTodoItemMenu = (click: MenuFunctionType, todo: TodoModel) => {
             click: () => click(MenuCallbackType.撤销完成, todo),
         },
         { type: 'separator' },
-        status != StatusModel.已完成 ? {
+        status != StatusModel.已完成 && !todo.lastComplateDate ? {
             label: todo.remind ? "修改提醒" : "添加提醒",
             click: () => click(MenuCallbackType.添加提醒, todo),
             icon: getImg('static/image/menu/remind.png')
         } : null,
-        todo.remind && status == StatusModel.未完成 ?
+        todo.remind && status == StatusModel.未完成 && !todo.lastComplateDate ?
             {
                 label: "删除提醒",
                 click: () => click(MenuCallbackType.删除提醒, todo),

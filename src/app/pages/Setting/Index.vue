@@ -12,7 +12,7 @@
                         <n-tab-pane name="audio" tab="声音设置">
                             <AudioSettingCom :setting="userSetting.audio" />
                         </n-tab-pane>
-                        <n-tab-pane name="tip" tab="提醒设置"></n-tab-pane>
+                        <!-- <n-tab-pane name="tip" tab="提醒设置"></n-tab-pane> -->
                     </n-tabs>
                 </div>
             </NConfigProvider>

@@ -24,7 +24,7 @@ let tray: Tray;
 const initMain = () => {
     mainWindow = createWindow({
         url: baseUrl,
-        dev: false,
+        dev: true,
         show: true,
         skipTaskbar: true,
     })

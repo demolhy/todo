@@ -10,7 +10,7 @@
                 >已超时：{{ formatTime(Math.abs(todo?._extend.ms)) }}</div>
                 <div class="btn">
                     <a @click="close">关闭</a>
-                    <a @click="delay">延迟</a>
+                    <!-- <a @click="delay">延迟</a> -->
                 </div>
             </div>
             <n-checkbox class="complate" size="large" :on-update:checked="changeCheck" />
