@@ -1,9 +1,9 @@
 <template>
   <div class="todo-list">
-    <AddTodo @refresh="refresh" />
     <div class="item-list">
       <TodoItem v-for="(item, index) in list" :todo="item" @refresh="refresh" :key="index" />
     </div>
+    <AddTodo class="is-add-todo" @refresh="refresh" />
   </div>
 </template>
 
@@ -31,10 +31,18 @@ refresh();
 </script>
 
 <style lang="less" scoped>
+  .is-add-todo{
+    // display: none;
+  }
 .todo-list {
   margin: 13px 5px;
   height: calc(100% - 80px - 26px);
   overflow: hidden;
+  &:hover{
+    .is-add-todo{
+      display: block;
+    }
+  }
 
   .item-list {
     height: calc(100% - 120px);

@@ -201,7 +201,7 @@ const showMenu = () => {
 
   .check-text {
     text-decoration: line-through;
-    text-decoration-color: red;
+    text-decoration-color: @base-color-5;
     color: @base-color-5;
   }
   .text {

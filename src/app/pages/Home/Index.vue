@@ -94,7 +94,8 @@ leaveToZero(() => {
     position: relative;
     width: 100%;
     height: 100%;
-    background: fade(#414141, 50%);
+    // background: fade(#414141, 50%);
+    background: fade(#000000, 30%);
     transition: all 0.3s ease-out;
 }
 .show {

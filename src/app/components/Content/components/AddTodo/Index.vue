@@ -39,7 +39,10 @@ const okClick = (todo: TodoModel) => {
 <style lang="less" scoped>
 .add-todo {
   padding: 0 5px;
-
+  position: absolute;
+  bottom: 50px;
+  left: 10px;
+  right: 10px;
   .add-todo-btn {
     width: 100%;
     color: @base-color;

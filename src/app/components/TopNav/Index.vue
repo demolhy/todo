@@ -3,10 +3,10 @@
     drag: !lock,
   }">
     <div class="left">
-      <div>便签</div>
-      <n-badge :dot="count > 0" class="custom-dot">
+      <div>小羊 Todo</div>
+      <!-- <n-badge :dot="count > 0" class="custom-dot">
         <span class="icon-msg" />
-      </n-badge>
+      </n-badge> -->
     </div>
     <div class="right">
       <span :class="{ 'icon-unlock': !lock, 'icon-lock': lock }" @click="lockClick(!lock)" />
@@ -66,7 +66,7 @@ const showMenu = () => {
   top: 0;
   width: 100%;
   height: 40px;
-  background: fade(#3b3b3b, 80%);
+  background: fade(#000000, 30%);
   display: flex;
 
   & > div {
