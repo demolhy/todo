@@ -98,10 +98,12 @@ const cycleSettingOk = (v: RemindModel) => {
 <style lang="less" scoped>
 @border: 1px solid @base-color-3;
 .add-todo-info {
-  width: 100%;
+  width: 96%;
   color: @base-color;
   border: @border;
   border-radius: 5px;
+  margin: 10px auto;
+  box-sizing: border-box;
 
   .info-input {
     background: transparent;

@@ -165,12 +165,12 @@ const showMenu = () => {
 
 .not-edit {
   &:hover {
-    background: rgba(70, 70, 70, 0.5);
+    background: rgba(70, 70, 70, 0.2);
   }
 }
 
 .todo-item {
-  padding: 5px;
+  padding: 5px 10px;
 
   .show-item {
     display: flex;

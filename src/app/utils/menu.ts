@@ -49,12 +49,12 @@ export const getTodoItemMenu = (click: MenuFunctionType, todo: TodoModel) => {
         {
             label: "删除",
             click: () => click(MenuCallbackType.删除, todo),
-            icon: getImg('static/image/menu/copy.png')
+            icon: getImg('static/image/menu/del.png')
         },
         {
             label: "复制",
             click: () => click(MenuCallbackType.复制, todo),
-            icon: getImg('static/image/menu/del.png')
+            icon: getImg('static/image/menu/copy.png')
         },];
     todoItemMenu = todoItemMenu.filter(m => m != null);
     let todoItemMenuIns = Menu.buildFromTemplate(todoItemMenu);

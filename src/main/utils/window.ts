@@ -16,7 +16,7 @@ export const createWindow = (option: CreateWindowOption): BrowserWindow => {
     option = Object.assign({
         width: 320,
         height: 700,
-        maxWidth: 320,
+        // maxWidth: 320,
         minHeight: 500,
         minimizable: false,
         maximizable: false,

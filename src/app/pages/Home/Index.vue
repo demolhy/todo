@@ -3,10 +3,10 @@
         leave: leave
     }">
         <NMessageProvider>
-            <NConfigProvider :locale="zhCN" :date-locale="dateZhCN">
-                <TopNav v-model:lock="lock" />
-                <Content />
-                <BottomNav />
+            <NConfigProvider :locale="zhCN" :date-locale="dateZhCN" style="height:100%">
+                <TopNav class="top-nav" v-model:lock="lock" />
+                <Content class="content" />
+                <!-- <BottomNav class="bottom" /> -->
             </NConfigProvider>
         </NMessageProvider>
     </div>
